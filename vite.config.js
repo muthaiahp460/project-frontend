@@ -7,8 +7,6 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'axios',  // Example: Externalize axios if you want to exclude it
-        'react',  // Example: Externalize React if needed
-        'react-dom' // Example: Externalize ReactDOM if needed
       ]
     }
   }
