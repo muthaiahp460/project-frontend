@@ -8,6 +8,7 @@ function UploadArtworks() {
   const [price, setPrice] = useState('');
   const [image, setImage] = useState(null);
 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData();
