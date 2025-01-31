@@ -1,13 +1,7 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
+// vite.config.js
 export default defineConfig({
-  plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: [
-        'axios',  // Example: Externalize axios if you want to exclude it
-      ]
-    }
+  server: {
+    port: 3000,  // or whichever port you prefer
+    host: '0.0.0.0'  // This allows external access
   }
 });
