@@ -7,7 +7,7 @@ import paintings from '../img/paintings.jpg';
 import sculptures from '../img/sculpters.jpg';
 import digitalArt from '../img/digital-art.jpg';
 
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = "https://aurora-artworks.onrender.com";
 
 const Home = () => {
   const [artworks, setArtworks] = useState([]);

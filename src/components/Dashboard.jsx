@@ -14,7 +14,7 @@ const Dashboard = (callback) => {
 
   const handleRegister = async () => {
     try {
-      await axios.post('http://localhost:5000/register', {
+      await axios.post(`https://aurora-artworks.onrender.com/register`, {
         email,
         uname,
         password,
@@ -148,7 +148,7 @@ const Dashboard = (callback) => {
       {/* FOOTER */}
       <footer className="dashboard-footer">
         <p>
-          © {new Date().getFullYear()} Artwork Store Admin Panel. All rights
+          {new Date().getFullYear()} Artwork Store Admin Panel. All rights
           reserved.
         </p>
       </footer>
@@ -251,7 +251,7 @@ const Dashboard = (callback) => {
 
 
 <footer className="footer-section">
-<p>© {new Date().getFullYear()} Artwork Store. All rights reserved.</p>
+<p> {new Date().getFullYear()} Artwork Store. All rights reserved.</p>
 <p>
   <strong>Follow us:</strong> Instagram | Twitter | Facebook
 </p>

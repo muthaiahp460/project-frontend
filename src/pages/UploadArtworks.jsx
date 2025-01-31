@@ -17,7 +17,7 @@ function UploadArtworks() {
     formData.append('image', image);
 
     try {
-      await axios.post('http://localhost:5000/api/artworks', formData, {
+      await axios.post('https://aurora-artworks.onrender.com/api/artworks', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

@@ -14,7 +14,7 @@ function AdminDashboard() {
   const fetchArtworks = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/artworks');
+      const response = await axios.get('https://aurora-artworks.onrender.com/api/artworks');
       setArtworks(response.data);
     } catch (error) {
       console.error('Error fetching artworks:', error);
@@ -35,7 +35,7 @@ function AdminDashboard() {
 
     try {
       setLoading(true);
-      await axios.delete(`http://localhost:5000/api/artworks/${artworkId}`);
+      await axios.delete(`https://aurora-artworks.onrender.com/api/artworks/${artworkId}`);
       toast.success('Artwork deleted successfully');
       await fetchArtworks();
     } catch (error) {
